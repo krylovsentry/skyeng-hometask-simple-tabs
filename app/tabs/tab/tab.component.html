@@ -1,0 +1,9 @@
+<div 
+class="tab"
+[class._active] = "isActive"
+>
+  <ng-content select="app-tab-title"></ng-content>
+  <ng-container *ngIf="isActive">
+      <ng-content  select="app-tab-content"></ng-content>
+  </ng-container>
+</div>
